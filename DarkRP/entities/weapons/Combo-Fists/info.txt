@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"name"				"Combo-Fists"
+	"version"			"1.11"
+	"up_date"			"March 22th 2009"
+	"author_name"		"-[SB]- Spy"
+	"author_email"		"No contacts for you :P"
+	"author_url"		"No contacts for you :P."
+	"info"				"Simple Combo-Fists."
+	"override"			"0"
+}
