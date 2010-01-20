@@ -547,8 +547,9 @@ function HitDeath( victim, weapon, killer )
 				else
 					victim:SetNWBool("hit", false)
 					killer:AddMoney(cost)
-					Notify(killer, 1, 4, "You have completed a hit and have been payed " .. CUR .. tostring(cost))
+					Notify(killer, 1, 4, "You have completed a hit and have been paid " .. CUR .. tostring(cost))
 					Notify(victim, 1, 4, killer:Nick() .. " has completed a hit on you")
+					victim:ChatPrint(killer:Nick() .. " Has completed a legitimate hit on you.")
 				end
 			end
 		end
