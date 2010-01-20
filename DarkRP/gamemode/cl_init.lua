@@ -97,7 +97,7 @@ function DrawPlayerInfo(ply)
 	pos.z = pos.z + 34
 	pos = pos:ToScreen()
 	if ((ply:GetNWBool("hit")) and (LocalPlayer():Team() == TEAM_HIT)) then
-	draw.DrawText("Has a Hit!", "default", pos.x + 1, pos.y - 10, Color(221, 0, 0, 255), 1)
+	draw.DrawText("Has a Hit!", "TargetID", pos.x + 1, pos.y - 12, Color(221, 0, 0, 255), 1)
 	end
 
 	if GetGlobalInt("nametag") == 1 then

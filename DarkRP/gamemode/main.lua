@@ -2190,3 +2190,20 @@ function VoteRemoveLicense(ply, args)
 	end
 end
 AddChatCommand("/demotelicense", VoteRemoveLicense)
+
+function ReturnHitList(ply)
+if(ply:Team() ~= TEAM_HIT) then
+	ply:ChatPrint("Your not a Hitman!")
+	return ""
+end
+
+ply:ChatPrint("Hit List: ")
+	for k,v in pairs(player.GetAll()) do
+		if v:GetNWBool("hit") then
+			ply:ChatPrint(v:GetName())
+		end	
+	end
+ply:ChatPrint("End Hit List")
+	return ""
+end
+AddChatCommand("/hitlist", ReturnHitList)
