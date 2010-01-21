@@ -2207,3 +2207,8 @@ ply:ChatPrint("End Hit List")
 	return ""
 end
 AddChatCommand("/hitlist", ReturnHitList)
+
+--Jail Escape Features
+function CreateShiv(ply)
+	return
+end
