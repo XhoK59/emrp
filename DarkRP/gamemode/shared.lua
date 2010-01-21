@@ -153,3 +153,10 @@ It is not illegal to strip in a bar.
 
 
 TEAM_CARDEALER = AddExtraTeam("Cardealer", Color(0, 204, 0, 255), "models/player/Hostage/Hostage_02.mdl", [[Sell cars to the local population]], {}, "cardealer", 1, 45, 0, false, false)
+
+TEAM_TLEAD = AddExtraTeam("Osama ", Color(255, 120, 0, 255), "models/player/charple01.mdl" , [[You leads the terrorist forces.
+Controll your terrorist minions to take over the city.
+Your you must take the mayor hostage and give the CP demands for his safe return.
+Should the CP fail to comply with your demands, the mayor is free game.
+THIS CLASS IS NOT TO BE USED TO KILL THE MAYOR WITH REDICULOUS DEMANDS
+Only raid the CP building/take the mayor hostage every 20-25 minutes because constant raids ruin the RP. ]] , {"unarrest_stick", "lockpick"} , "osama", 1, 75, 0, false, true, TEAM_TERRORIST)
