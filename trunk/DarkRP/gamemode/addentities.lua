@@ -51,7 +51,7 @@ AddEntity("Microwave", "microwave", "models/props/cs_office/microwave.mdl", 400,
 //AddCustomVehicle("Copcar", "models/copcar.mdl", 1000 {TEAM_POLICE, TEAM_CHIEF})
 //AddCustomVehicle("Ferrari", "models/ferrari.mdl", 10000 )
 //AddCustomVehicle("Truck", "models/tideslkw.mdl", 4000 )
-//AddCustomVehicle("Jeep", "models/buggy.mdl", 2000, TEAM_CARDEALER )
+AddCustomVehicle("Jeep", "models/buggy.mdl", 2000, {TEAM_CARDEALER} )
 //AddCustomVehicle("Airboat", "models/airboat.mdl", 5000 )
 
 /*
