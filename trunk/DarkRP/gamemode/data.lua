@@ -37,6 +37,37 @@ end
 /*---------------------------------------------------------
  The privileges
  ---------------------------------------------------------*/
+ 
+ function DB.IsFirstTime(ply)
+	local steamID = ply:SteamID();
+	result = sql.Query("SELECT loved FROM jrrp_loved WHERE steam = '"..steamID.."'")
+	if (result) then
+	else
+		DB.Virgin(ply)
+	end
+
+end
+
+function DB.Virgin(ply)
+	sql.Query("INSERT INTO jrrp_loved VALUES(" .. sql.SQLStr(ply:SteamID()) .. ", 0);")
+end
+
+function DB.IsLoved(ply)
+	local SteamID = ply:SteamID()
+	local result = tonumber(sql.QueryValue("SELECT " .. sql.SQLStr("loved") .. " FROM jrrp_loved WHERE steam = " .. sql.SQLStr(ply:SteamID()) .. ";"))
+	if result == 1 then
+		return 1
+	else
+		return 0
+	end
+end
+
+function DB.GiveLoving(ply)
+	if(ply:isPlayer()) then		
+		sql.Query("UPDATE INTO jrrp_loved VALUES(" .. sql.SQLStr(steamID) .. ", 1);")
+	end
+end
+
 function DB.CreatePrivs()
 	sql.Begin()
 	if reset_all_privileges_to_these_on_startup then

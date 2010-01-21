@@ -32,8 +32,8 @@ TEAM_CITIZEN = AddExtraTeam("Citizen", Color(20, 150, 20, 255), "models/player/g
 besides being a hobo. 
 You have no specific role in city life.]], {}, "citizen", 0, 45, 0, false, false)
 
-TEAM_UNDERCOVERCOP = AddExtraTeam("CUndercover Cop", Color(20, 150, 20, 255), "models/player/group01/male_01.mdl", [[Fight the law from the underground.
-]], {"arrest_stick", "unarrest_stick", "weapon_real_cs_glock18", "stunstick", "door_ram", "weaponchecker", "item_ammo_pistol"}, "undercovercop", 2, 50, 0, true, true, TEAM_POLICE)
+TEAM_UC = AddExtraTeam("Citizen", Color(20, 150, 20, 255), "models/player/group01/male_01.mdl", [[Fight the law from the underground.
+]], {"arrest_stick", "unarrest_stick", "weapon_real_cs_glock18", "stunstick", "door_ram", "weaponchecker", "item_ammo_pistol"}, "undercovercop", 2, 50, 0, false, false, TEAM_POLICE)
 
 TEAM_HOBO = AddExtraTeam("Hobo", Color(80, 45, 0, 255), "models/player/corpse1.mdl", [[The lowest member of society. All people see you laugh. 
 You have no home.
@@ -122,7 +122,7 @@ It is not illegal to strip in a bar.
 TEAM_ADMIN = AddExtraTeam("Admin", Color(255, 0, 0, 255), "models/player/combine_super_soldier.mdl", [[Admin.
 Enough said.]], {""}, "admin", 1, 100, 3, false, true)
 
-TEAM_HIT = AddExtraTeam("Hitman", Color(0, 204, 204, 255), "models/player/Phoenix.mdl", [[Kill people for money.
+TEAM_HIT = AddExtraTeam("Citizen", Color(0, 204, 204, 255), "models/player/group01/male_01.mdl", [[Kill people for money.
 It is aganst the law to murder, you will be arrested.
 Only kill people if someone pays you to kill them. Or else its RDM]], {"weapon_real_cs_knife"}, "hitman", 1, 50, 0, false, false)
 
@@ -153,23 +153,5 @@ TEAM_TEST = AddExtraTeam("Test", Color(255, 102, 255, 255), "models/player/combi
 It is not illegal to strip in a bar.
 (Yes, you should get tips from watchers.)]], {}, "test", 2, 50, 3, false, false)
 
-/*
---------------------------------------------------------
-HOW TO MAKE AN EXTRA CLASS!!!!
---------------------------------------------------------
 
-You can make extra classes here. Set everything up here and the rest will be done for you! no more editing 100 files without knowing what you're doing!!!
-Ok here's how:
-
-To make an extra class do this:
-AddExtraTeam( "<NAME OF THE CLASS>", Color(<red>, <Green>, <blue>, 255), "<Player model>" , [[<the description(it can have enters)>]], { "<first extra weapon>","<second extra weapon>", etc...}, "<chat command to become it(WITHOUT THE /!)>", <maximum amount of this team> <the salary he gets>, 0/1/2 = public /admin only / superadmin only, <1/0/true/false Do you have to vote to become it>,  true/false DOES THIS TEAM HAVE A GUN LICENSE?, TEAM: Which team you need to be to become this team)
-
-The real example is here: it's the Hobo:		*/
-
---VAR without /!!!			The name    the color(what you see in tab)                   the player model					The description
-
-//No extra weapons           say /hobo to become hobo  Maximum hobo's = 5		his salary = 0 because hobo's don't earn money.          0 = everyone can become hobo ,      false = you don't have to vote to become hobo
-// MAKE SURE THAT THERE IS NO / IN THE TEAM NAME OR IN THE TEAM COMMAND:
-// TEAM_/DUDE IS WROOOOOONG !!!!!!
-// HAVING "/dude" IN THE COMMAND FIELD IS WROOOOOOOONG!!!!
-//ADD TEAMS UNDER THIS LINE:
+TEAM_CARDEALER = AddExtraTeam("Cardealer", Color(0, 204, 0, 255), "models/player/group01/Male_02.mdl", [[Sell cars to the local population]], {}, "cardealer", 1, 45, 0, false, false)

@@ -426,11 +426,20 @@ function GM:PlayerInitialSpawn(ply)
 	DB.Log(ply:SteamName().." ("..ply:SteamID()..") has joined the game")
 	ply.bannedfrom = {}
 	ply:NewData()
+	DB.IsFirstTime(ply)
+	if(DB.IsLoved(ply) == 1) then
+		ply:SetNWBool("Loved",true)
+		Msg("Your Loved, YAY!")
+	else
+		ply:SetNWBool("Loved",false)
+		Msg("Fuck you unloved Cunt!")
+	end
 	ply.SID = ply:UserID()
 	DB.RetrieveSalary(ply)
 	DB.RetrieveMoney(ply)
 	timer.Simple(10, ply.CompleteSentence, ply)
 end
+
 
 function GM:PlayerSelectSpawn(ply)
 	local POS = self.BaseClass:PlayerSelectSpawn(ply)
