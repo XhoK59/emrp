@@ -32,7 +32,7 @@ TEAM_CITIZEN = AddExtraTeam("Citizen", Color(20, 150, 20, 255), "models/player/g
 besides being a hobo. 
 You have no specific role in city life.]], {}, "citizen", 0, 45, 0, false, false)
 
-TEAM_UC = AddExtraTeam("UnderCover Cop", Color(20, 150, 20, 255), "models/player/group01/male_01.mdl", [[Fight the law from the underground.
+TEAM_UNDERCOVERCOP = AddExtraTeam("UnderCover Cop", Color(20, 150, 20, 255), "models/player/group01/male_01.mdl", [[Fight the law from the underground.
 ]], {"arrest_stick", "unarrest_stick", "weapon_real_cs_glock18", "stunstick", "door_ram", "weaponchecker", "item_ammo_pistol"}, "undercovercop", 2, 50, 0, false, false, TEAM_POLICE)
 
 TEAM_HOBO = AddExtraTeam("Hobo", Color(80, 45, 0, 255), "models/player/corpse1.mdl", [[The lowest member of society. All people see you laugh. 
