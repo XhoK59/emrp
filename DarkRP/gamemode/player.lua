@@ -386,6 +386,9 @@ end
 AddChatCommand("/addjailpos", AddJailPos)
 
 function meta:Arrest(time, rejoin)
+	if(self:Team() == TEAM_HIT) then
+		self:ChangeTeam(TEAM_CITIZEN)
+	end
 	self:SetNWBool("wanted", false)
 	self.warranted = false
 	self:SetNWBool("HasGunlicense", false)
@@ -564,3 +567,4 @@ function HitDeath( victim, weapon, killer )
 	end
 end
 hook.Add("PlayerDeath", "HitDeath", HitDeath)
+
