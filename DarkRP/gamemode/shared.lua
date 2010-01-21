@@ -32,7 +32,7 @@ TEAM_CITIZEN = AddExtraTeam("Citizen", Color(20, 150, 20, 255), "models/player/g
 besides being a hobo. 
 You have no specific role in city life.]], {}, "citizen", 0, 45, 0, false, false)
 
-TEAM_UC = AddExtraTeam("Citizen", Color(20, 150, 20, 255), "models/player/group01/male_01.mdl", [[Fight the law from the underground.
+TEAM_UC = AddExtraTeam("UnderCover Cop", Color(20, 150, 20, 255), "models/player/group01/male_01.mdl", [[Fight the law from the underground.
 ]], {"arrest_stick", "unarrest_stick", "weapon_real_cs_glock18", "stunstick", "door_ram", "weaponchecker", "item_ammo_pistol"}, "undercovercop", 2, 50, 0, false, false, TEAM_POLICE)
 
 TEAM_HOBO = AddExtraTeam("Hobo", Color(80, 45, 0, 255), "models/player/corpse1.mdl", [[The lowest member of society. All people see you laugh. 
@@ -122,12 +122,10 @@ It is not illegal to strip in a bar.
 TEAM_ADMIN = AddExtraTeam("Admin", Color(255, 0, 0, 255), "models/player/combine_super_soldier.mdl", [[Admin.
 Enough said.]], {""}, "admin", 1, 100, 3, false, true)
 
-TEAM_HIT = AddExtraTeam("Citizen", Color(0, 204, 204, 255), "models/player/group01/male_01.mdl", [[Kill people for money.
+TEAM_HIT = AddExtraTeam("Hitman", Color(20, 150, 20, 255), "models/player/group01/male_01.mdl", [[Kill people for money.
 It is aganst the law to murder, you will be arrested.
 Only kill people if someone pays you to kill them. Or else its RDM]], {"weapon_real_cs_knife"}, "hitman", 1, 50, 0, false, false)
 
-TEAM_WAFFLE = AddExtraTeam("Waffle", Color(255, 204, 0, 255), "models/player/swat.mdl", [[SUPER EPIC. 
-Thats all there is to Waffle.]], {"weapon_real_cs_pumpshotgun", "weapon_real_cs_mp5a5", "weapon_real_cs_grenade", "weapon_real_cs_p90", "weapon_real_cs_awp"}, "waffle", 1, 100, 3, false, true)
 
 TEAM_BODYGUARD = AddExtraTeam("Body Guard", Color(0, 204, 204, 255), "models/player/odessa.mdl", [[Guard people or stores be on either side of the law but be careful,
 your not on the police force.]], {"stunstick"}, "bodyguard", 2, 50, 0, false, false)
@@ -154,4 +152,4 @@ It is not illegal to strip in a bar.
 (Yes, you should get tips from watchers.)]], {}, "test", 2, 50, 3, false, false)
 
 
-TEAM_CARDEALER = AddExtraTeam("Cardealer", Color(0, 204, 0, 255), "models/player/group01/Male_02.mdl", [[Sell cars to the local population]], {}, "cardealer", 1, 45, 0, false, false)
+TEAM_CARDEALER = AddExtraTeam("Cardealer", Color(0, 204, 0, 255), "models/player/Hostage/Hostage_02.mdl", [[Sell cars to the local population]], {}, "cardealer", 1, 45, 0, false, false)

@@ -235,9 +235,17 @@ function meta:ChangeTeam(t, force)
 					return
 				end
 			end
+			if(t == TEAM_HIT or t == TEAM_UC) then
+			self:UpdateJob("Citizen")
+			else
 			self:UpdateJob(v.name)
+			end
 			DB.StoreSalary(self, v.salary)
+			if(t == TEAM_HIT or t == TEAM_UC) then
+			NotifyAll(1, 4, string.format(LANGUAGE.job_has_become, self:Nick(), "Citizen"))
+			else
 			NotifyAll(1, 4, string.format(LANGUAGE.job_has_become, self:Nick(), v.name))
+			end
 			if self:GetNWBool("HasGunlicense") then
 				self:SetNWBool("HasGunlicense", false)
 			end
