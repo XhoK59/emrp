@@ -27,19 +27,19 @@ AddEntity("Ammo Crate", "sent_AmmoCrate", "models/items/ammocrate_smg1.mdl", 600
 //Hitman & UnderCover Cop
 
 //Bar Owner
-AddCustomShipment("Water", "models/drug_mod/the_bottle_of_water.mdl", "durgz_water", 75, 10, false, 10, false, {TEAM_BAROWNER, TEAM_JUNKSELLER})
-AddCustomShipment("Beer", "models/drug_mod/alcohol_can.mdl", "durgz_alcohol", 100, 10, false, 10, false, {TEAM_BAROWNER})
+AddCustomShipment("Water", "models/drug_mod/the_bottle_of_water.mdl", "durgz_water", 75, 10, true, 15, false, {TEAM_BAROWNER, TEAM_JUNKSELLER})
+AddCustomShipment("Beer", "models/drug_mod/alcohol_can.mdl", "durgz_alcohol", 100, 10, true, 15, false, {TEAM_BAROWNER})
 //Drug Dealer.
-AddCustomShipment("Aspirin", "models/jaanus/aspbtl.mdl", "durgz_aspirin", 100, 10, false, 10, false, {TEAM_MEDIC, TEAM_JUNKSELLER})
-AddCustomShipment("Cigarettes", "models/boxopencigshib.mdl", "durgz_cigarette", 100, 10, false, 10, false, {TEAM_DRUGDEALER})
-AddCustomShipment("Cocaine", "models/cocn.mdl", "durgz_cocaine", 800, 10, false, 10, false, {TEAM_DRUGDEALER})
-AddCustomShipment("Heroine", "models/katharsmodels/syringe_out/syringe_out.mdl", "durgz_heroine", 10, 10, false, 10, false, {TEAM_DRUGDEALER})
-AddCustomShipment("Lsd", "models/smile/smile.mdl", "durgz_lsd", 150, 10, false, 10, false, {TEAM_DRUGDEALER})
-AddCustomShipment("Mushrooms", "models/ipha/mushroom_small.mdl", "durgz_mushroom", 400, 10, false, 10, false, {TEAM_DRUGDEALER})
-AddCustomShipment("Weed", "models/katharsmodels/contraband/zak_wiet/zak_wiet.mdl", "durgz_weed", 200, 10, false, 10, false, {TEAM_DRUGDEALER})
+AddCustomShipment("Aspirin", "models/jaanus/aspbtl.mdl", "durgz_aspirin", 100, 10, true, 15, false, {TEAM_MEDIC, TEAM_JUNKSELLER})
+AddCustomShipment("Cigarettes", "models/boxopencigshib.mdl", "durgz_cigarette", 100, 10, true, 15, false, {TEAM_DRUGDEALER})
+AddCustomShipment("Cocaine", "models/cocn.mdl", "durgz_cocaine", 800, 10, true, 100, false, {TEAM_DRUGDEALER})
+AddCustomShipment("Heroine", "models/katharsmodels/syringe_out/syringe_out.mdl", "durgz_heroine", 50, 10, true, 15, false, {TEAM_DRUGDEALER})
+AddCustomShipment("Lsd", "models/smile/smile.mdl", "durgz_lsd", 150, 10, true, 10, false, {TEAM_DRUGDEALER})
+AddCustomShipment("Mushrooms", "models/ipha/mushroom_small.mdl", "durgz_mushroom", 400, 10, true, 60, false, {TEAM_DRUGDEALER})
+AddCustomShipment("Weed", "models/katharsmodels/contraband/zak_wiet/zak_wiet.mdl", "durgz_weed", 200, 10, true, 40, false, {TEAM_DRUGDEALER})
 //Junk Seller.
-AddCustomShipment("Lock Pick", "models/weapons/w_crowbar.mdl", "lockpick", 2000, 10, false, 200, false, {TEAM_JUNKSELLER})
-AddCustomShipment("Keypad Cracker", "models/weapons/w_c4.mdl", "keypad_cracker", 2200, 10, false, 220, false, {TEAM_JUNKSELLER})
+AddCustomShipment("Lock Pick", "models/weapons/w_crowbar.mdl", "lockpick", 2000, 10, true, 250, false, {TEAM_JUNKSELLER})
+AddCustomShipment("Keypad Cracker", "models/weapons/w_c4.mdl", "keypad_cracker", 2200, 10, true, 300, false, {TEAM_JUNKSELLER})
 AddCustomShipment("Grenades", "models/weapons/w_eq_fraggrenade.mdl", "weapon_real_cs_grenade", 5000, 10, false, 500, false, {TEAM_JUNKSELLER})
 //Misc
 //AddEntity("Drug lab", "drug_lab", "models/props_lab/crematorcase.mdl", 400, 3, "/buydruglab", {TEAM_GANG, TEAM_MOB})
