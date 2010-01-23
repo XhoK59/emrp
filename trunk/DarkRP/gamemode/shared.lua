@@ -138,10 +138,6 @@ the mayor at any cost.
 ANY CIVILIANS KILLED WILL BE CONNCIDERED RDM
 ALL TERRORIST ATTACKS MUST BE ORGANIZED]], {}, "terrorist", 3, 45, 0, true, false)
 
-TEAM_TEST = AddExtraTeam("Test", Color(255, 102, 255, 255), "models/player/combine_super_soldier.mdl", [[Shake that ass and earn a living.
-It is not illegal to strip in a bar.
-(Yes, you should get tips from watchers.)]], {}, "test", 2, 50, 3, false, false)
-
 
 TEAM_CARDEALER = AddExtraTeam("Cardealer", Color(0, 204, 0, 255), "models/player/Hostage/Hostage_02.mdl", [[Sell cars to the local population]], {}, "cardealer", 1, 45, 0, false, false)
 
