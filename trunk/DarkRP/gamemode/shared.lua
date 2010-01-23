@@ -76,10 +76,6 @@ Without a medic, people can not be healed.
 Left click with the Medical Kit to heal other players.
 Right click with the Medical Kit to heal yourself.]], {"med_kit"}, "medic", 3, 45, 0, false, false)
 
-TEAM_COOK = AddExtraTeam("Cook", Color(238, 99, 99, 255), "models/player/mossman.mdl", [[As a cook, it is your responsibility to feed the other members 
-of your city. 
-You can spawn a microwave and sell the food you make:
-/Buymicrowave]], {}, "cook", 2, 45, 0, 0, false)
 
 TEAM_CHIEF = AddExtraTeam("Civil Protection Chief", Color(20, 20, 255, 255), "models/player/combine_soldier_prisonguard.mdl", [[The Chief is the leader of the Civil Protection unit. 
 Coordinate the police forces to bring law to the city
@@ -133,11 +129,6 @@ your not on the police force.]], {"stunstick"}, "bodyguard", 2, 50, 0, false, fa
 TEAM_JUNKSELLER = AddExtraTeam("Junk Seller", Color(102, 51, 0, 255), "models/player/eli.mdl", [[Sell asprin,keypad crackers, lockpicks, and more.
 ]], {}, "junkseller", 2, 50, 0, false, false)
 
-TEAM_BOXER = AddExtraTeam("Boxer", Color(255, 102, 0, 255), "models/player/barney.mdl", [[Fight in the ring for prize money.
-Be sure to consult your bookie to set up fights.]], {"hl2_combo_fists"}, "boxer", 2, 50, 0, false, false)
-
-TEAM_BOOKIE = AddExtraTeam("Bookie", Color(204, 51, 0, 255), "models/player/group01/Male_09.mdl", [[Set up fights and take a commission from the boxers.
-Be careful not to get caught by the cops!]], {"med_kit"}, "bookie", 1, 60, 0, false, false)
 
 TEAM_MAYORSPROTECTOR = AddExtraTeam("Mayor's Protector", Color(153, 0, 0, 255), "models/player/swat.mdl", [[Protect they mayor with your life.
 ]], {"weapon_real_cs_desert_eagle", "weaponchecker"}, "mayorsprotector", 1, 50, 0, true, true)
