@@ -142,7 +142,7 @@ Be careful not to get caught by the cops!]], {"med_kit"}, "bookie", 1, 60, 0, fa
 TEAM_MAYORSPROTECTOR = AddExtraTeam("Mayor's Protector", Color(153, 0, 0, 255), "models/player/swat.mdl", [[Protect they mayor with your life.
 ]], {"weapon_real_cs_desert_eagle", "weaponchecker"}, "mayorsprotector", 1, 50, 0, true, true)
 
-TEAM_TERRORIST = AddExtraTeam("Terrorist", Color(204, 102, 0, 255), "models/player/charple01.mdl", [[Your job is simple take over the police department and kill 
+TEAM_TERRORIST = AddExtraTeam("Terrorist", Color(204, 102, 0, 255), "models/player/phoenix.mdl", [[Your job is simple take over the police department and kill 
 the mayor at any cost.
 ANY CIVILIANS KILLED WILL BE CONNCIDERED RDM
 ALL TERRORIST ATTACKS MUST BE ORGANIZED]], {}, "terrorist", 3, 45, 0, true, false)
@@ -154,7 +154,7 @@ It is not illegal to strip in a bar.
 
 TEAM_CARDEALER = AddExtraTeam("Cardealer", Color(0, 204, 0, 255), "models/player/Hostage/Hostage_02.mdl", [[Sell cars to the local population]], {}, "cardealer", 1, 45, 0, false, false)
 
-TEAM_TLEAD = AddExtraTeam("Osama ", Color(255, 120, 0, 255), "models/player/charple01.mdl" , [[You leads the terrorist forces.
+TEAM_TLEAD = AddExtraTeam("Osama ", Color(255, 120, 0, 255), "models/player/arctic.mdl" , [[You leads the terrorist forces.
 Controll your terrorist minions to take over the city.
 Your you must take the mayor hostage and give the CP demands for his safe return.
 Should the CP fail to comply with your demands, the mayor is free game.
