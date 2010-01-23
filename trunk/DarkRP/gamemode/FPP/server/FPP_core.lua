@@ -455,7 +455,6 @@ function FPP.Protect.CanTool(ply, trace, tool, ENT)
 	end
 	return GAMEMODE:CanTool(ply, trace, tool)
 end
-hook.Add("CanTool", "FPP.Protect.CanTool", FPP.Protect.CanTool)
 
 --Player disconnect, not part of the Protect table.
 function FPP.PlayerDisconnect(ply)
