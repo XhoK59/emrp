@@ -436,8 +436,12 @@ function JobsTab()
 		UpdateInfo()
 		
 		local function AddIcon(Model, name, description, Weapons, command, special, specialcommand)
-			if(name == "Hitman" or name == "UnderCoverCop") then
-				name == "Citizen"
+			if(name == "CHitman" )then
+				name = "Hitman"
+			end
+			
+			if(name == "CUnderCover Cop") then
+				name = "Undercover Cop"
 			end
 			local icon = vgui.Create("SpawnIcon")
 			icon:SetModel(Model)
