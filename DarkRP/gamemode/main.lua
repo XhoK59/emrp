@@ -519,7 +519,7 @@ end
 
 function SearchWarrant(ply, args)
 	local t = ply:Team()
-	if not (t == TEAM_POLICE or t == TEAM_MAYOR or t == TEAM_CHIEF) then
+	if not (t == TEAM_POLICE or t == TEAM_MAYOR or t == TEAM_CHIEF or t== TEAM_UNDERCOVERCOP) then
 		Notify(ply, 1, 4, string.format(LANGUAGE.must_be_x, "cop/mayor", "/warrant"))
 	else
 		local p = FindPlayer(args)
@@ -557,7 +557,7 @@ AddChatCommand("/warrent", SearchWarrant) -- Most players can't spell for some r
 
 function PlayerWanted(ply, args)
 	local t = ply:Team()
-	if not (t == TEAM_POLICE or t == TEAM_MAYOR or t == TEAM_CHIEF) then
+	if not (t == TEAM_POLICE or t == TEAM_MAYOR or t == TEAM_CHIEF or t== TEAM_UNDERCOVERCOP) then
 		Notify(ply, 1, 6, string.format(LANGUAGE.must_be_x, "cop/mayor", "/wanted"))
 	else
 		local p = FindPlayer(args)
@@ -577,7 +577,7 @@ AddChatCommand("/wanted", PlayerWanted)
 
 function PlayerUnWanted(ply, args)
 	local t = ply:Team()
-	if not (t == TEAM_POLICE or t == TEAM_MAYOR or t == TEAM_CHIEF) then
+	if not (t == TEAM_POLICE or t == TEAM_MAYOR or t == TEAM_CHIEF or t== TEAM_UNDERCOVERCOP) then
 		Notify(ply, 1, 6, string.format(LANGUAGE.must_be_x, "cop/mayor", "/unwanted"))
 	else
 		local p = FindPlayer(args)
