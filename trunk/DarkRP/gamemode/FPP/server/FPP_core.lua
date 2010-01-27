@@ -328,10 +328,7 @@ timer.Simple(5, function()
 end)
 
 function FPP.Protect.CanTool(ply, trace, tool, ENT)
-	-- Toolgun restrict
-	local ignoreGeneralRestrictTool = false
-	local SteamID = ply:SteamID()
-
+	
 	
 	-- Anti model server crash
 	if ValidEntity(ply:GetActiveWeapon()) and ply:GetActiveWeapon().GetToolObject and ply:GetActiveWeapon():GetToolObject() and 
