@@ -40,7 +40,7 @@ end
  
  function DB.IsFirstTime(ply)
 	local steamID = ply:SteamID();
-	result = sql.Query("SELECT loved FROM jrrp_loved WHERE steam = '"..steamID.."'")
+	result = sql.QueryValue("SELECT loved FROM jrrp_loved WHERE steam = '"..steamID.."'")
 	if (result) then
 	else
 		DB.Virgin(ply)
@@ -63,9 +63,13 @@ function DB.IsLoved(ply)
 end
 
 function DB.GiveLoving(ply)
-	if(ply:isPlayer()) then		
-		sql.Query("UPDATE INTO jrrp_loved VALUES(" .. sql.SQLStr(steamID) .. ", 1);")
-	end
+	local steamID = ply:SteamID()	
+		sql.Query("UPDATE jrrp_loved VALUES(" .. sql.SQLStr(steamID) .. ", 1);")
+end
+
+function DB.RemoveLoving(ply)
+	local steamID = ply:SteamID()	
+		sql.Query("UPDATE jrrp_loved VALUES(" .. sql.SQLStr(steamID) .. ", 0);")
 end
 
 function DB.CreatePrivs()
