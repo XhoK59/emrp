@@ -427,13 +427,13 @@ function GM:PlayerInitialSpawn(ply)
 	ply.bannedfrom = {}
 	ply:NewData()
 	DB.IsFirstTime(ply)
---	if(DB.IsLoved(ply) == 1) then
-	--	ply:SetNWBool("Loved",true)
-		--Msg("Your Loved, YAY!")
---	else
-	--	ply:SetNWBool("Loved",false)
-		--Msg("Fuck you unloved Cunt!")
-	end
+	if(DB.IsLoved(ply) == 1) then
+		ply:SetNWBool("Loved", true)
+		ply:ChatPrint("Loved Status: True")
+	else
+		ply:SetNWBool("Loved", false)
+		ply:ChatPrint("Loved Status: False")
+		end
 	ply.SID = ply:UserID()
 	DB.RetrieveSalary(ply)
 	DB.RetrieveMoney(ply)
