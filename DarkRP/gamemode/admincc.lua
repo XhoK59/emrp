@@ -876,3 +876,36 @@ function ccSENTSPawn(ply, cmd, args)
 	DB.Log(ply:SteamName().." ("..ply:SteamID()..") spawned SENT "..args[1] )
 end
 concommand.Add("gm_spawnsent", ccSENTSPawn)
+
+function ccGiveLove(ply, args)
+	if(ply:EntIndex() ~= 0 and not ply:HasPriv(ADMIN)) then
+		notify(ply, 1, 2, "You are not an admin!")
+		return
+	end
+	
+	local target = args[1]
+	if(FindPlayer(target) == false) then
+		if(ply:EntIndex() ~= 0) then
+			notify(ply, 1, 2, "That player doesn't exist!")
+		end
+	return
+	end
+	DB.GiveLoving(ply)
+end
+concommand.Add("jrrp_giveloved", ccGiveLove)
+function ccTakeAwayLove(ply, target)
+	if(ply:EntIndex() ~= 0 and not ply:HasPriv(ADMIN)) then
+		notify(ply, 1, 2, "You are not an admin!")
+		return
+	end
+	
+	local target = args[1]
+	if(FindPlayer(target) == false) then
+		if(ply:EntIndex() ~= 0) then
+			notify(ply, 1, 2, "That player doesn't exist!")
+		end
+	return
+	end
+	DB.RemoveLoving(ply)
+end
+concommand.Add("jrrp_removeloved", ccTakeAwayLove)
