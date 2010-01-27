@@ -17,6 +17,7 @@ AddCustomShipment("FiveSeven", "models/weapons/w_pist_fiveseven.mdl", "weapon_re
 AddCustomShipment("Knife", "models/weapons/w_knife_t.mdl", "weapon_real_cs_knife", 2000, 10, true, 250, false, {TEAM_GUN, TEAM_JUNKSELLER})
 AddEntity("Ammo Crate", "sent_AmmoCrate", "models/items/ammocrate_smg1.mdl", 600, 1, "/buyammocrate", TEAM_GUN)
 
+
 //Hitman & UnderCover Cop
 
 //Bar Owner
