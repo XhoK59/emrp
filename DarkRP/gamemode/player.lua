@@ -561,10 +561,16 @@ function HitDeath( victim, weapon, killer )
 					Notify(killer, 1, 4, "You have completed a hit and have been paid " .. CUR .. tostring(cost))
 					Notify(victim, 1, 4, killer:Nick() .. " has completed a hit on you")
 					victim:ChatPrint(killer:Nick() .. " Has completed a legitimate hit on you.")
+					for k,v in pairs(player.GetAll()) do
+						if v:isAdmin() then
+							v:ChatPrint(killer:Nick() .. "has completed a hit on:" .. victim:Nick())
+						end	
+					end
 				end
 			end
 		end
 	end
 end
 hook.Add("PlayerDeath", "HitDeath", HitDeath)
+
 
