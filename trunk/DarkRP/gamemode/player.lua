@@ -562,7 +562,7 @@ function HitDeath( victim, weapon, killer )
 					Notify(victim, 1, 4, killer:Nick() .. " has completed a hit on you")
 					victim:ChatPrint(killer:Nick() .. " Has completed a legitimate hit on you.")
 					for k,v in pairs(player.GetAll()) do
-						if v:isAdmin() then
+						if v:hasPriv(ADMIN) then
 							v:ChatPrint(killer:Nick() .. "has completed a hit on:" .. victim:Nick())
 						end	
 					end
