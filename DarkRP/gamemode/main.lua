@@ -1719,8 +1719,8 @@ function DropMoney(ply, args)
 	end
 	local amount = math.floor(tonumber(args))
 
-	if amount <= 1 then
-		Notify(ply, 1, 4, string.format(LANGUAGE.invalid_x, "argument", ""))
+	if amount <= 50 then
+		Notify(ply, 1, 4, "you must drop less more than 50$")
 		return ""
 	end
 

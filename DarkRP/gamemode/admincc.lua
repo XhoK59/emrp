@@ -909,3 +909,17 @@ function ccTakeAwayLove(ply, target)
 	DB.RemoveLoving(ply)
 end
 concommand.Add("jrrp_removeloved", ccTakeAwayLove)
+
+function ccNoClip(ply)
+	if(ply:HasPriv(ADMIN) == false) then
+		Notify(ply, 1, 2, "You are not an admin!")
+		return
+	end
+	if(ply:GetMoveType() == MOVETYPE_WALK) then
+		ply:SetMoveType(MOVETYPE_NOCLIP)
+	else
+		ply:SetMoveType(MOVETYPE_WALK)
+	end
+end
+
+concommand.Add("jrrp_noclip", ccNoClip)
