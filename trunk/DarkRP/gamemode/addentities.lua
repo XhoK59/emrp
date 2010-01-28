@@ -17,6 +17,17 @@ AddCustomShipment("FiveSeven", "models/weapons/w_pist_fiveseven.mdl", "weapon_re
 AddCustomShipment("Knife", "models/weapons/w_knife_t.mdl", "weapon_real_cs_knife", 2000, 10, true, 250, false, {TEAM_GUN, TEAM_JUNKSELLER})
 AddEntity("Ammo Crate", "sent_AmmoCrate", "models/items/ammocrate_smg1.mdl", 600, 1, "/buyammocrate", TEAM_GUN)
 
+AddCustomShipment("Medic Costume", "models/weapons/w_c4.mdl", "Costume_Medic", 500, 1, true, 200, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+AddCustomShipment("Mayor Costume", "models/weapons/w_c4.mdl", "Costume_Mayor", 500, 1, true, 200, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+AddCustomShipment("Car Dealer Costume", "models/weapons/w_c4.mdl", "Costume_CarDealer", 350, 1, true, 150, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+//AddCustomShipment("Civil Protection Costume", "models/weapons/w_c4.mdl", "Costume_CP", 300, 1, true, 1000, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+AddCustomShipment("Mob Boss Costume", "models/weapons/w_c4.mdl", "Costume_Mobboss", 200, 1, true, 800, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+//AddCustomShipment("Hitman Costume", "models/weapons/w_c4.mdl", "Costume_Hitman", 300, 1, true, 1200, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+//AddCustomShipment("Gangster Costume", "models/weapons/w_c4.mdl", "Costume_Gangster", 150, 1, true, 1200, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+//AddCustomShipment("Gun Dealer Costume", "models/weapons/w_c4.mdl", "Costume_Gundealer", 250, 1, true, 1200, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+AddCustomShipment("Terrorist Costume", "models/weapons/w_c4.mdl", "Costume_Terrorist", 200, 1, true, 200, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+AddCustomShipment("Drugdealer Costume", "models/weapons/w_c4.mdl", "Costume_DrugDealer", 500, 1, true, 200, true, {TEAM_HIT, TEAM_UNDERCOVERCOP})
+
 
 //Hitman & UnderCover Cop
 

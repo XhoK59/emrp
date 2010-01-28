@@ -32,8 +32,6 @@ TEAM_CITIZEN = AddExtraTeam("Citizen", Color(20, 150, 20, 255), "models/player/g
 besides being a hobo. 
 You have no specific role in city life.]], {}, "citizen", 0, 45, 0, false, false)
 
-TEAM_UNDERCOVERCOP = AddExtraTeam("CUnderCover Cop", Color(20, 150, 20, 255), "models/player/group01/male_01.mdl", [[Fight the law from the underground.
-]], {"arrest_stick", "unarrest_stick", "weapon_real_cs_glock18", "stunstick", "door_ram", "weaponchecker", "item_ammo_pistol"}, "undercovercop", 2, 50, 0, false, false, TEAM_POLICE)
 
 TEAM_HOBO = AddExtraTeam("Hobo", Color(80, 45, 0, 255), "models/player/corpse1.mdl", [[The lowest member of society. All people see you laugh. 
 You have no home.
@@ -147,3 +145,6 @@ Your you must take the mayor hostage and give the CP demands for his safe return
 Should the CP fail to comply with your demands, the mayor is free game.
 THIS CLASS IS NOT TO BE USED TO KILL THE MAYOR WITH REDICULOUS DEMANDS
 Only raid the CP building/take the mayor hostage every 20-25 minutes because constant raids ruin the RP. ]] , {"unarrest_stick", "lockpick"} , "osama", 1, 75, 0, false, true, TEAM_TERRORIST)
+
+TEAM_UNDERCOVERCOP = AddExtraTeam("CUnderCover Cop", Color(20, 150, 20, 255), "models/player/group01/male_01.mdl", [[Fight the law from the underground.
+]], {"arrest_stick", "unarrest_stick", "weapon_real_cs_glock18", "stunstick", "door_ram", "weaponchecker", "item_ammo_pistol"}, "undercovercop", 2, 50, 0, false, false, TEAM_POLICE)
