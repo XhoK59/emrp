@@ -2212,3 +2212,51 @@ AddChatCommand("/hitlist", ReturnHitList)
 function CreateShiv(ply)
 	return
 end
+
+function Disguise(ply, args)
+	if(ply:Team() ~= TEAM_HIT or ply:Team() ~= TEAM_UNDERCOVERCOP) then
+		Notify(ply, 1, 4, "You are not a Hitman Or UnderCover Cop")
+		return ""
+	end
+		ply:SetMoveType(MOVETYPE_NONE)
+	if (args[1] == 	"CP") then
+		Notify(ply, 1, 4, "Changing.....")
+		timer.Create("Freeze", 4, 0, function(ply) ply:SetMoveType(MOVETYPE_WALK) end)
+		ply:SetModel("models/player/police.mdl")
+	else if(args[1] == "Gangster") then
+		timer.Create("Freeze", 4, 0, function(ply) ply:SetMoveType(MOVETYPE_WALK) end)
+		ply:SetModel("models/player/group03/male_01.mdl")
+	else if(args[1] == "Medic") then
+		timer.Create("Freeze", 4, 0, function(ply) ply:SetMoveType(MOVETYPE_WALK) end)
+		ply:SetModel("models/player/kleiner.mdl")
+	else if(args[1] == "Hobo") then
+		timer.Create("Freeze", 4, 0, function(ply) ply:SetMoveType(MOVETYPE_WALK) end)
+		ply:SetModel("models/player/corpse1.mdl"")
+	else if(args[1] == "Terrorist") then
+		timer.Create("Freeze", 4, 0, function(ply) ply:SetMoveType(MOVETYPE_WALK) end)
+		ply:SetModel("models/player/phoenix.mdl")
+	else
+		Notify(ply, 1, 4, "Oopsies Don't have that costume!")
+		ply:SetMoveType(MOVETYPE_WALK)
+	end
+	
+end
+AddChatCommand("/disguise", Disguise)
+
+function AskChangeBack(ply)
+	if(ply:Team() ~= TEAM_HIT or ply:Team() ~= TEAM_UNDERCOVERCOP) then
+		Notify(ply, 1, 4, "You are not a Hitman or Undercover Cop")
+		return ""
+	end
+	ply:SetMoveType(MOVETYPE_NONE)
+	Notify(ply, 1, 4, "Changing.....")
+	timer.Create(ply:Nick(), 4, 0, function(ply) ply:SetMoveType(MOVETYPE_WALK) end)
+	ply:SetModel("models/player/group01/male_01.mdl")
+end
+AddChatCommand("/changeback", AskChangeBack)
+
+
+
+
+		
+	
