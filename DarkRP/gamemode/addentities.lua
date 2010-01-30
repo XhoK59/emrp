@@ -39,7 +39,7 @@ AddCustomShipment("Aspirin", "models/jaanus/aspbtl.mdl", "durgz_aspirin", 100, 1
 AddCustomShipment("Cigarettes", "models/boxopencigshib.mdl", "durgz_cigarette", 100, 10, true, 15, false, {TEAM_DRUGDEALER})
 AddCustomShipment("Cocaine", "models/cocn.mdl", "durgz_cocaine", 800, 10, true, 100, false, {TEAM_DRUGDEALER})
 AddCustomShipment("Heroine", "models/katharsmodels/syringe_out/syringe_out.mdl", "durgz_heroine", 50, 10, true, 15, false, {TEAM_DRUGDEALER})
-AddCustomShipment("Lsd", "models/smile/smile.mdl", "durgz_lsd", 150, 10, true, 10, false, {TEAM_DRUGDEALER})
+AddCustomShipment("Lsd", "models/smile/smile.mdl", "durgz_lsd", 150, 10, true, 25, false, {TEAM_DRUGDEALER})
 AddCustomShipment("Mushrooms", "models/ipha/mushroom_small.mdl", "durgz_mushroom", 400, 10, true, 60, false, {TEAM_DRUGDEALER})
 AddCustomShipment("Weed", "models/katharsmodels/contraband/zak_wiet/zak_wiet.mdl", "durgz_weed", 200, 10, true, 40, false, {TEAM_DRUGDEALER})
 //Junk Seller.
